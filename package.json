@@ -1,0 +1,23 @@
+{
+  "name": "derweili-wordpress-starter-theme",
+  "version": "1.0.0",
+  "description": "A new WordPress Boilerplate Theme by Horttcore",
+  "author": "TW Werbeagenten Heidelberg GmbH <mail@werbeagenten.de>",
+  "license": "GPL-2.0+",
+  "homepage": "https://werbeagenten.de",
+  "scripts": {
+    "bootstrap": "wpackio-scripts bootstrap",
+    "build": "wpackio-scripts build",
+    "start": "wpackio-scripts start",
+    "archive": "wpackio-scripts pack"
+  },
+  "devDependencies": {
+    "@wpackio/scripts": "^4.4.1",
+    "fork-ts-checker-webpack-plugin": "^5.0.14",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "@wpackio/entrypoint": "^4.4.1",
+    "node-sass-glob-importer": "^5.3.2"
+  }
+}

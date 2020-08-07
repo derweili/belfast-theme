@@ -1,0 +1,14 @@
+/**
+ * <a>
+ */
+a {
+    transition: all var(--animation__duration);
+
+    &:not([class]) {
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
