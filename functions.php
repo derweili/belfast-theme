@@ -99,7 +99,7 @@ add_action('after_setup_theme', function () {
      * @see https://codex.wordpress.org/Content_Width
      * ------------------------------------------------------------------------------
      */
-    (new ContentWidth(980))->register();
+    (new ContentWidth(640))->register();
 
 
     /**
@@ -113,7 +113,7 @@ add_action('after_setup_theme', function () {
     global $wpack_enqueue;
     $wpack_enqueue = new \WPackio\Enqueue(
         // Name of the project, same as `appName` in wpackio.project.js
-        'derweiliWordPressStarterTheme',
+        'belfastTheme',
         // Output directory, same as `outputPath` in wpackio.project.js
         'dist',
         // Version of your plugin
@@ -295,7 +295,7 @@ add_action('after_setup_theme', function () {
 		// It is important that we init the Enqueue class right at the plugin/theme load time
 		$this->enqueue = new \WPackio\Enqueue(
 			// Name of the project, same as `appName` in wpackio.project.js
-			'derweiliWordPressStarterTheme',
+			'belfastTheme',
 			// Output directory, same as `outputPath` in wpackio.project.js
 			'dist',
 			// Version of your plugin

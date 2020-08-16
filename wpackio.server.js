@@ -13,7 +13,7 @@ module.exports = {
 	host: undefined,
 	// Your WordPress development server address
 	// This is super important
-	proxy: 'https://themetest.test/',
+	proxy: 'https://belfast.test',
 	// PORT on your localhost where you would want live server to hook
 	port: 3000,
 	// UI passed directly to browsersync
@@ -32,5 +32,5 @@ module.exports = {
 	},
 	// Override system calculated public path of the `dist` directory
 	// This must have forward slash, otherwise it will not work.
-	distPublicPath: undefined,
+	distPublicPath: '/app/themes/belfast-theme/dist/'
 };

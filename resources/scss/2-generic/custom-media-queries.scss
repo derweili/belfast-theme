@@ -4,6 +4,12 @@
  * Defining custom media queries
  * usage: `@media (--adminbar--sticky);`
  */
-@custom-media --adminbar--sticky (min-width: 37.5em);
-@custom-media --adminbar--full (min-width: 48.875em);
-@custom-media --mobile-nav (min-width: 48.875em);
+// @custom-media --adminbar--sticky (min-width: 37.5em);
+// @custom-media --adminbar--full (min-width: 48.875em);
+// @custom-media --mobile-nav (min-width: 48.875em);
+
+@mixin medium-breakpoint() {
+    @media (min-width: 48em) {
+        @content;
+    }
+}

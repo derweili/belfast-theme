@@ -1,5 +1,5 @@
 {
-  "name": "derweili-wordpress-starter-theme",
+  "name": "belfast-theme",
   "version": "1.0.0",
   "description": "A new WordPress Boilerplate Theme by Horttcore",
   "author": "TW Werbeagenten Heidelberg GmbH <mail@werbeagenten.de>",
@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@wpackio/entrypoint": "^4.4.1",
+    "hamburgers": "^1.1.3",
     "node-sass-glob-importer": "^5.3.2"
   }
 }

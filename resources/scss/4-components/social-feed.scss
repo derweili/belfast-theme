@@ -1,0 +1,8 @@
+#sb_instagram {
+    @extend %container--wide;
+    width: auto !important;
+
+    .sb_instagram_header {
+        display: none;
+    }
+}

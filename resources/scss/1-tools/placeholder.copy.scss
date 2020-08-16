@@ -4,6 +4,8 @@
  * Define global copy text styles
  */
 %copy {
+    @include fluid-type(500px, 800px, 15px, 20px);
+    line-height: 1.6em;
 }
 
 %copy--large {

@@ -21,6 +21,10 @@ get_template_part('resources/views/header', get_post_type());
 
     <div class="container">
 
+        <?php if( has_post_thumbnail() ):?>
+            <?php get_template_part('resources/views/template-parts/page-head'); ?>
+        <?php endif; ?>
+
         <main class="main">
 
             <?php
@@ -29,8 +33,6 @@ get_template_part('resources/views/header', get_post_type());
             ?>
 
         </main>
-
-        <?php get_template_part('resources/views/template-parts/sidebar', get_post_type()) ?>
 
     </div>
 

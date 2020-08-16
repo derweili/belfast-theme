@@ -4,3 +4,7 @@
 .container {
     @extend %container;
 }
+
+.has-text-color {
+    color: black;
+}

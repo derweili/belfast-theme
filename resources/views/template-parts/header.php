@@ -6,35 +6,29 @@
     <div class="header__container container">
 
         <?php the_custom_logo() ?>
-
-        <button class="navigation-toggle"><span class="navigation-toggle__icon"></span></button>
-
-        <?php
-        wp_nav_menu(array(
-            'theme_location'    => 'main',
-            'container'         => 'nav',
-            'container_class'   => 'main-navigation',
-            'container_id'      => 'main-navigation',
-            'menu_class'        => '',
-            'menu_id'           => '',
-            'before'            => '',
-            'fallback_cb'       => '',
-        ));
-        ?>
+        
+        <div class="navigation-toggle">
+            <button class="hamburger hamburger--elastic" type="button"
+              aria-label="Menu" aria-controls="navigation" aria-expanded="true/false">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <!-- Menu -->
+        </div>
 
         <?php
-        wp_nav_menu(array(
-            'theme_location'    => 'meta',
-            'container'         => 'nav',
-            'container_class'   => 'meta-navigation',
-            'container_id'      => 'meta-navigation',
-            'menu_class'        => '',
-            'menu_id'           => '',
-            'before'            => '',
-            'fallback_cb'       => '',
-        ));
+            wp_nav_menu(array(
+                'theme_location'    => 'main',
+                'container'         => 'nav',
+                'container_class'   => 'main-navigation',
+                'container_id'      => 'main-navigation',
+                'menu_class'        => '',
+                'menu_id'           => '',
+                'before'            => '',
+                'fallback_cb'       => '',
+            ));
         ?>
-
     </div>
 
 </header>

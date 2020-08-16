@@ -1,3 +1,7 @@
+$hamburger-types : ( elastic );
+
+@import "../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
 /**
  * <nav>
  */
@@ -16,5 +20,42 @@ nav {
 
     a {
         text-decoration: none;
+    }
+}
+
+.main-navigation > ul {
+    display: none;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+    @include medium-breakpoint {
+        flex-direction: row;
+        justify-content: center;
+        display: flex;
+    
+        li {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+}
+
+.main-navigation.is-visible > ul {
+    display: flex;
+}
+
+.navigation-toggle {
+    display: flex;
+
+    @include medium-breakpoint {
+        display: none;
     }
 }
