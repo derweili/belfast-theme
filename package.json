@@ -12,7 +12,7 @@
     "archive": "wpackio-scripts pack"
   },
   "devDependencies": {
-    "@wpackio/scripts": "^4.4.1",
+    "@wpackio/scripts": "^6.4.0",
     "fork-ts-checker-webpack-plugin": "^5.0.14",
     "node-sass": "^4.14.1"
   },
